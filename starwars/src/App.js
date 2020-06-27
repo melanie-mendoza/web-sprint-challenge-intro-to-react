@@ -1,18 +1,30 @@
 import React from 'react';
 import './App.css';
+import CharacterList from './components/CharacterList';
+import styled from 'styled-components';
 
-const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
+const Headline = styled.h1`
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: 50px;
 
-  // Fetch characters from the API in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+  &:hover {
+    color: rgb(255, 227, 0);
+  }
+`;
 
+function App() {
+  
   return (
-    <div className="App">
-      <h1 className="Header">Characters</h1>
+    <div>
+      <div className="App">
+        <Headline className="Header">Star Wars Characters</Headline>
+      </div>
+      <CharacterList />
     </div>
+    
   );
 }
 
