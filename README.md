@@ -1,4 +1,4 @@
-# Intro to React Sprint Challenge
+    # Intro to React Sprint Challenge
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -30,11 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a Javascript library that makes creating User Interfaces easier for both the developer and user. React is UI based on data. React achieves this in several ways. One is by creating the Virtual DOM which compares data to the DOM before rendering it to the page. Another is by the use of components, state, and props.
+
+
 1. Describe component state.
+
+Components are, essentially, functions when defined in terms of vanilla Javascript. What makes components even more powerful is its ability to contain many functions within it and the fact that it can be made into its own file. 
+
 
 1. Describe props.
 
+Props are, essentially, arguments to a function, in this case, components. When compared to vanilla Javascript, a prop does exactly what an argument does in plain JS. Props can be passed to a component and used to invoke that component.
+
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are ways to control data in React. React follows the rules or Functional Programming in which functions are pure. In using the side effect hook, React allows the developers to use a side effect to listen for pieces of data. To use the sife effect hook, we import { useEffect } from "react" to our component.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
